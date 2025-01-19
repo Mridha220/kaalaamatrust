@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+header img {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+nav {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    padding: 20px;
+}
+
+.founder-img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+}
+
+.carousel {
+    text-align: center;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+.carousel-inner .carousel-item {
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    color: #0d6efd;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.donate {
+    display: inline-block;
+    background: #0d6efd;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.donate:hover {
+    background: #004085;
+}
+
+.bank-details ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.bank-details li {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Vertically align text */
+    margin-bottom: 10px; /* Space between items */
+}
+
+.bank-details li span {
+    font-weight: bold; /* Make labels bold */
+    min-width: 200px; /* Ensure consistent alignment */
+}
+
+.bank-details li span::after {
+    content: ":"; /* Add a colon after labels */
+    margin-right: 10px; /* Add spacing after colon */
+}
+
+
+
+
+.social-icons a {
+    margin: 0 10px;
+    color: #0d6efd;
+}
+
+#chairperson img {
+    border: 5px solid #f4f4f4;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#chairperson img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+#positionsCarousel .carousel-item {
+    background-color: #f8f9fa; /* Light background for contrast */
+    padding: 30px 0; /* Add spacing inside the carousel */
+    border-radius: 10px; /* Rounded corners for modern look */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
