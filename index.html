@@ -119,12 +119,79 @@
                 </div>
             </div>
         </section>
-        <!-- Donation Button -->
-      <div class="container text-center py-4" id="donate">
-    <a href="#" class="btn btn-warning" style="height: 36px; width: 150px;" onclick="alert('Bank Name: HDFC BANK\nAccount Holder: Kaalaama Charitable Trust\nAccount Number: 50200102989186\nIFSC Code: HDFC0007779\nMobile Number: 9618714266')">
+       <!-- Donation Button -->
+<div class="container text-center py-4" id="donate">
+
+    <button type="button"
+        class="btn btn-warning"
+        style="height: 40px; width: 160px; font-weight: bold;"
+        onclick="openDonationQR()">
         Please Donate
-    </a>
-     </div>
+    </button>
+
+</div>
+
+<!-- QR Code Popup -->
+<div id="donationQRPopup"
+     style="display:none;
+     position:fixed;
+     top:0;
+     left:0;
+     width:100%;
+     height:100%;
+     background:rgba(0,0,0,0.75);
+     z-index:9999;
+     justify-content:center;
+     align-items:center;">
+
+    <div style="
+        background:#fff;
+        padding:25px;
+        border-radius:15px;
+        text-align:center;
+        width:320px;
+        max-width:90%;
+        box-shadow:0 5px 25px rgba(0,0,0,0.3);">
+
+        <h4 style="color:#b8860b;">
+            Kaalaama Charitable Trust
+        </h4>
+
+        <p style="color:#555;">
+            Scan QR Code to Donate
+        </p>
+
+        <img
+            src="https://res-console.cloudinary.com/dsykd6x9n/thumbnails/transform/v1/image/upload/Y19maWxsLGhfMjAwLHdfMjAw/v1/U2NyZWVuc2hvdF8yMDI2LTExLTIyXzEyNDYyMl9uZnk3Y2c=/template_primary"
+            alt="Kaalaama Charitable Trust Donation QR Code"
+            style="width:220px;height:220px;object-fit:contain;">
+
+        <p style="margin-top:15px;color:#333;">
+            Your Contribution Makes a Difference!
+        </p>
+
+        <button onclick="closeDonationQR()"
+            style="background:#dc3545;
+            color:white;
+            border:none;
+            padding:9px 25px;
+            border-radius:5px;
+            cursor:pointer;">
+            Close
+        </button>
+
+    </div>
+</div>
+
+<script>
+function openDonationQR() {
+    document.getElementById("donationQRPopup").style.display = "flex";
+}
+
+function closeDonationQR() {
+    document.getElementById("donationQRPopup").style.display = "none";
+}
+</script>
 
 
 
