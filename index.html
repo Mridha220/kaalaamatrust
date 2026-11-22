@@ -131,39 +131,183 @@
 
 
 
-<!-- Chairperson Section -->
-<section class="py-5" id="founder">
+
+<!-- Adviser and Founder Section -->
+<section class="py-5" id="leadership" style="background: #fbfaf6;">
     <div class="container">
-        <div class="row align-items-center">
-            <!-- Chairperson Photo -->
-            <div class="col-12 col-md-6 text-center order-first">
-                <img src="https://res.cloudinary.com/dsykd6x9n/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1735986091/IMG-20250104-WA0002_rl0xng.jpg" 
-                     alt="Durgam Shyam Rao" 
-                     class="img-fluid rounded-circle shadow" 
-                     style="max-width: 300px; width: 100%; height: auto;">
+
+        <div class="row g-4 align-items-stretch">
+
+            <!-- ADVISER LEFT SIDE -->
+            <div class="col-12 col-lg-6 d-flex">
+
+                <div class="profile-card w-100 text-center p-4">
+
+                    <!-- Adviser Photo -->
+                    <img src="https://res.cloudinary.com/dsykd6x9n/image/upload/v1795329381/Elderly_Monk_in_Saffron_Robes_rdgbjj.png"
+                         alt="Ven. Bharathwaj"
+                         class="profile-photo">
+
+                    <h4 class="fw-bold mb-1">
+                        Ven. Bharathwaj
+                    </h4>
+
+                    <p class="profile-designation">
+                        Adviser
+                    </p>
+
+                    <div class="profile-divider"></div>
+
+                    <p class="profile-description">
+                        Ven. Bharathwaj serves as an Adviser to
+                        Kaalaama Charitable Trust, offering guidance
+                        and support to the Trust in its mission of
+                        serving society and supporting communities
+                        in need.
+                    </p>
+
+                </div>
             </div>
-            <!-- Chairperson Info -->
-            <div class="col-12 col-md-6">
-                <h2 class="mb-4 text-center text-md-left">Chairperson & Founder</h2>
-                <h4 class="mb-3 text-center text-md-left">Durgam Shyam Rao</h4>
-                <p style="text-align: justify;">
-                    Mr. Durgam Shyam Rao is the Chairperson and Founder of Kaalaama Charitable Trust. A multifaceted individual,
-                    he has dedicated his life to serving the community and making a difference in the lives of the underprivileged.
-                </p>
-                <p style="text-align: justify;">
-                    His commitment to social service is evident through his leadership in the trust, where he focuses on healthcare,
-                    education, and livelihood programs aimed at alleviating poverty and fostering a sustainable future for communities in need.
-                    As the founder, Mr. Shyam Rao laid the groundwork for many impactful initiatives that continue to serve marginalized groups.
-                </p>
-                <p style="text-align: justify;">
-                    With an unwavering vision for a better society, Mr. Durgam Shyam Rao leads with compassion and determination. His work
-                    extends beyond the professional realm, and his dedication has positively impacted the lives of many individuals and
-                    families in the region, particularly in Gundaipet.
-                </p>
+
+
+            <!-- FOUNDER RIGHT SIDE -->
+            <div class="col-12 col-lg-6 d-flex">
+
+                <div class="profile-card w-100 text-center p-4">
+
+                    <!-- Founder Photo -->
+                    <img src="https://res.cloudinary.com/dsykd6x9n/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1735986091/IMG-20250104-WA0002_rl0xng.jpg"
+                         alt="Durgam Shyam Rao"
+                         class="profile-photo">
+
+                    <h4 class="fw-bold mb-1">
+                        Durgam Shyam Rao
+                    </h4>
+
+                    <p class="profile-designation">
+                        Chairperson &amp; Founder
+                    </p>
+
+                    <div class="profile-divider"></div>
+
+                    <p class="profile-description">
+                        Mr. Durgam Shyam Rao is the Chairperson and
+                        Founder of Kaalaama Charitable Trust. A
+                        multifaceted individual, he has dedicated
+                        his life to serving the community and making
+                        a difference in the lives of the underprivileged.
+                    </p>
+
+                    <p class="profile-description">
+                        His commitment to social service is evident
+                        through his leadership in the Trust, where
+                        he focuses on healthcare, education, and
+                        livelihood programs aimed at alleviating
+                        poverty and fostering a sustainable future
+                        for communities in need. As the founder,
+                        Mr. Shyam Rao laid the groundwork for many
+                        impactful initiatives that continue to serve
+                        marginalized groups.
+                    </p>
+
+                    <p class="profile-description">
+                        With an unwavering vision for a better society,
+                        Mr. Durgam Shyam Rao leads with compassion and
+                        determination. His work extends beyond the
+                        professional realm, and his dedication has
+                        positively impacted the lives of many
+                        individuals and families in the region,
+                        particularly in Gundaipet.
+                    </p>
+
+                </div>
             </div>
+
         </div>
     </div>
 </section>
+
+
+<!-- Common Styling for Both Containers -->
+<style>
+
+    /* Equal Card Design */
+    #leadership .profile-card {
+        background: #ffffff;
+        border: 1px solid #e5d5ad;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        height: 100%;
+    }
+
+    /* Identical Photo Size and Position */
+    #leadership .profile-photo {
+        display: block;
+        width: 220px;
+        height: 220px;
+        min-width: 220px;
+        min-height: 220px;
+        object-fit: cover;
+        object-position: center;
+        border: 4px solid #e5d5ad;
+        border-radius: 50%;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        margin: 0 auto 16px;
+    }
+
+    /* Name */
+    #leadership .profile-card h4 {
+        color: #17365d;
+    }
+
+    /* Designation */
+    #leadership .profile-designation {
+        color: #a78336;
+        font-weight: 600;
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    /* Gold Divider */
+    #leadership .profile-divider {
+        width: 55px;
+        height: 3px;
+        background: #c5a45b;
+        margin: 0 auto 20px;
+    }
+
+    /* Description */
+    #leadership .profile-description {
+        color: #555;
+        text-align: justify;
+        line-height: 1.8;
+        margin-bottom: 16px;
+    }
+
+    /* Equal Height */
+    #leadership .row {
+        align-items: stretch;
+    }
+
+    #leadership .row > div {
+        display: flex;
+    }
+
+    #leadership .profile-card {
+        width: 100%;
+    }
+
+    /* Mobile */
+    @media (max-width: 991px) {
+        #leadership .profile-photo {
+            width: 200px;
+            height: 200px;
+            min-width: 200px;
+            min-height: 200px;
+        }
+    }
+
+</style>
 
 
 <!-- Management Committee Section -->
